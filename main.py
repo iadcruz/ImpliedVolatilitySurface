@@ -34,7 +34,7 @@ with st.spinner("Creating visualization..."):
     try:
         ticker = yf.Ticker(ticker_symbol)
         spot_price = ticker.info["regularMarketPrice"]
-    except KeyError:
+    except (KeyError, ValueError):
         st.error("Invalid ticker! Please try again.")
         st.stop()
 
