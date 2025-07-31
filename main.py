@@ -24,7 +24,7 @@ def get_implied_vol(price, K, S, T, r, q=0):
 today = datetime.datetime.today()
 
 st.sidebar.header("Model Configuration")
-ticker_symbol = st.sidebar.text_input("Ticker symbol:", value="FAKE").upper()
+ticker_symbol = st.sidebar.text_input("Ticker symbol:", value="GOOG").upper()
 interest_rate = st.sidebar.number_input("Risk-free Interest Rate:", value=0.015, format="%.4f")
 dividend_yield = st.sidebar.number_input('Dividend Yield', value=0.013, format="%.4f")
 show_given_implied_vol = st.sidebar.checkbox("Show YFinance implied volatility", value=False)
