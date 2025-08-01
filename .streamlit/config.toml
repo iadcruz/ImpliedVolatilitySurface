@@ -1,7 +1,4 @@
 [server]
 enableXsrfProtection = false
 enableCORS = false
-
-[browser]
-serverAddress = "0.0.0.0"
-serverPort = 8501
+headless = true
