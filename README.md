@@ -1,6 +1,3 @@
-View the deployed app .
-
-
 ## Implied Volatility Surface Model
 
 An interactive app that displays implied volatility surfaces using real-time option data from the Yahoo Finance API
